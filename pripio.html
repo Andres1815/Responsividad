@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contenedor-padre{
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+      }
+      header{
+        grid-area: header;
+        text-align: center;
+        background: linear-gradient(123deg, rgb(107, 232, 238), rgb(194, 46, 194));
+        color: rgb(255, 255, 255);
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px;
+      }
+      nav{
+       grid-area: nav;
+       padding: 1rem 0;  
+       box-shadow: 0 2px 4px;  
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+        
+      }
+      nav ul li{
+        margin: 0 1rem;
+      }
+      nav ul li a{
+        text-decoration: none;
+      }
+
+      main{
+        grid-area: main;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="contenedor-padre"></div>
+    <header>
+      <h1>Mi Pagina Wed Sencilla</h1>
+      <p>Un Diseño Minimalista y atractivo</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">inicio</a></li>
+        <li><a href="">Servicio</a></li>
+        <li><a href="">Acerca de</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav>
+    
+      <main>
+        <section>
+          <h3>Bienvenido</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
+            porro! Ratione similique, dolorum laborum aliquid aperiam recusandae
+            suscipit, vel quibusdam velit earum beatae quis harum officiis odit
+            corporis alias excepturi.
+          </p>
+        </section>
+        <section>
+          <h3>Nuestros Servicios</h3>
+          <div>
+            <h4>Diseño Web</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus laboriosam, doloribus autem quae nam adipisci ad
+              corporis ea ex officia dolorem non, est aperiam consectetur illo
+              quod voluptas assumenda unde!
+            </p>
+          </div>
+          <div>
+            <h4>Desarrollo Frontend</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus laboriosam, doloribus autem quae nam adipisci ad
+              corporis ea ex officia dolorem non, est aperiam consectetur illo
+              quod voluptas assumenda unde!
+            </p>
+          </div>
+          <div>
+            <h4>Optimización SEO</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus laboriosam, doloribus autem quae nam adipisci ad
+              corporis ea ex officia dolorem non, est aperiam consectetur illo
+              quod voluptas assumenda unde!
+            </p>
+          </div>
+        </section>
+        <section>
+          <h3>Acerca de Nosotros</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+            excepturi iure maxime, molestias alias similique temporibus hic cum
+            ab eius saepe incidunt nemo dignissimos minima cumque perspiciatis
+            quidem, delectus labore!
+          </p>
+        </section>
+        <section>
+          <h3>Contacto</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+            omnis facilis, error natus sequi atque maxime libero dolore
+            consequuntur quos cum pariatur illum necessitatibus incidunt numquam
+            quam deleniti labore autem?
+          </p>
+        </section>
+      </main>
+
+      <footer>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</footer>
+    </div>
+  </body>
+</html>
